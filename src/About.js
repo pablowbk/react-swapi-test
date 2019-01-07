@@ -21,6 +21,7 @@ const About = (props) => {
             <a href="https://codepen.io/pablowbk/" target="_blank" rel="noopener noreferrer">CodePen</a>
           </div>
         </footer>
+        <button>click to close</button>
     </div>
   )
 }
