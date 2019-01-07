@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
 
-const About = (props) => {
+const About = ({visibility, handleClick}) => {
   return (
     <div
       className="About"
-      style={ props.visibility ? {display: 'flex'} : {display: 'none'}}
-      onClick={props.handleClick}>
+      style={ visibility ? {display: 'flex'} : {display: 'none'}}
+      onClick={ handleClick }>
         <h1>Star Wars App</h1>
         <h3>A project for ZeroToMastery course</h3>
         <hr/>

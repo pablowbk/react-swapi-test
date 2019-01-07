@@ -4,6 +4,7 @@ import NavBar from './NavBar';
 import Header from './Header';
 import Loader from './Loader';
 import About from './About';
+import SearchBox from './SearchBox';
 import './App.css';
 
 // const api_data = [];
@@ -14,10 +15,13 @@ class App extends Component {
     this.state = {
       data: [],
       api_data: [],
-      isVisible: false
+      isAboutVisible: false,
+      isSearchVisible: false,
+      searchfield: ''
     };
 
     this.handleAboutClick = this.handleAboutClick.bind(this);
+    this.onSearchChange = this.onSearchChange.bind(this);
   }
 
   componentDidMount() {
@@ -49,30 +53,46 @@ class App extends Component {
   }
 
   handleAboutClick(event) {
-    this.setState({isVisible: !this.state.isVisible});
+    this.setState({isAboutVisible: !this.state.isAboutVisible});
+  }
 
+  handleSearchClick(event) {
+    this.setState({isSearchVisible: !this.state.isSearchVisible});
+  }
+
+  onSearchChange(event) {
+    this.setState({searchfield: event.target.value})
   }
 
 
   render() {
-    const { api_data, isVisible } = this.state;
+    const { api_data, isAboutVisible, isSearchVisible, searchfield} = this.state;
+    const filteredData = api_data.filter(character =>{
+      return character.name.toLowerCase().includes(searchfield.toLowerCase())
+    })
     return (
       <div className='App'>
           <NavBar
-            handleClick={this.handleAboutClick}
+            handleAboutClick={this.handleAboutClick}
+            handleSearchBoxClick={this.handleSearchBoxClick}
+          />
+          <SearchBox
+            searchChange={this.onSearchChange}
+            handleSearchBoxClick={this.handleSearchBoxClick}
+            visibility={isSearchVisible}
           />
           <Header />
           {
             api_data.length === 0
             ? <Loader /> //<h3>Loading Cards...</h3>
-            : <h3>Cards Count: { api_data.length }</h3>
+            : <h3>Cards Count: { filteredData.length }</h3>
           }
           <CardContainer
-            data={ api_data }
+            data={ filteredData }
           />
           <About
-            visibility={isVisible}
-            handleClick={this.handleAboutClick}
+            visibility={isAboutVisible}
+            handleAboutClick={this.handleAboutClick}
           />
       </div>
     );
