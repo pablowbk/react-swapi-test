@@ -21,6 +21,7 @@ class App extends Component {
     };
 
     this.handleAboutClick = this.handleAboutClick.bind(this);
+    this.handleSearchBoxClick = this.handleSearchBoxClick.bind(this);
     this.onSearchChange = this.onSearchChange.bind(this);
   }
 
@@ -52,11 +53,12 @@ class App extends Component {
 
   }
 
+
   handleAboutClick(event) {
     this.setState({isAboutVisible: !this.state.isAboutVisible});
   }
 
-  handleSearchClick(event) {
+  handleSearchBoxClick(event) {
     this.setState({isSearchVisible: !this.state.isSearchVisible});
   }
 

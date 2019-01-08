@@ -12,8 +12,8 @@ const NavBar = (props) => {
     <nav className='Nav'>
       <ul style={navLiStyles}>
         <li>Home</li>
-        <li>Search</li>
-        <li onClick={props.handleClick}>About</li>
+        <li onClick={props.handleSearchBoxClick}>Search</li>
+        <li onClick={props.handleAboutClick}>About</li>
       </ul>
     </nav>
   )
