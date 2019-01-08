@@ -20,19 +20,19 @@ self.__precacheManifest = [
     "url": "/react-swapi-test/static/js/runtime~main.c115b7f3.js"
   },
   {
-    "revision": "e378828f830e98b7b592",
-    "url": "/react-swapi-test/static/js/main.e378828f.chunk.js"
+    "revision": "3d7a74a69afe9625087e",
+    "url": "/react-swapi-test/static/js/main.3d7a74a6.chunk.js"
   },
   {
     "revision": "311eec274bcf6a9c3e74",
     "url": "/react-swapi-test/static/js/1.311eec27.chunk.js"
   },
   {
-    "revision": "e378828f830e98b7b592",
-    "url": "/react-swapi-test/static/css/main.c1e4c4d9.chunk.css"
+    "revision": "3d7a74a69afe9625087e",
+    "url": "/react-swapi-test/static/css/main.58233b4e.chunk.css"
   },
   {
-    "revision": "67532606bbe572007778ecd8c03ef444",
+    "revision": "41cad796130a8bbd43f91695a3a06020",
     "url": "/react-swapi-test/index.html"
   }
 ];
