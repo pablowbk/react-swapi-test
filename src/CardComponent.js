@@ -18,7 +18,7 @@ class CardComponent extends Component {
       fetch(this.props.species[0])
         .then(resp => resp.json())
         .then(json => this.setState({species: json.name}))
-        .catch((err) => console.log('ERROR FETCHING SPECIES', err))
+        .catch(() => this.setState({species: 'Species Unknown'}));
 
     // FILMS //
 
