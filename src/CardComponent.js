@@ -47,7 +47,7 @@ class CardComponent extends Component {
       <div className='Card'>
         <h3>{ name }</h3>
         <h4>{ this.state.species }</h4>
-        <div>Featured in:
+        <div className='films-list'>Featured in:
             <ul>
               { this.state.films.map((film, i) => (
                 <li key={i}>

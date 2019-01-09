@@ -88,31 +88,35 @@ h3 {
 }
 
 .Card {
-  min-width: 280px;
+  min-width: 290px;
   height: 420px;
   border: 2px solid white;
   border-radius: 20px;
   margin: 20px;
   padding: 20px;
   transition: all 200ms ease;
+  background: rgba(60, 60, 60, 1);
   /* flex: 1 1; */
 }
 
 .Card:hover {
   box-shadow: 0px 0px 20px 0px orange;
+  transform: translateY(-1%);
 }
 
 .Card:focus {
   box-shadow: 0px 0px 20px 0px orange;
 }
 
+.films-list {
+  margin: 10px;
+  margin-top: 20px;
+}
+
 .Card ul {
   padding-left: 15px;
   list-style-type: none;
-}
-
-.Card ul::after {
-  content: "";
+  margin: 10px auto;
 }
 
 .Card li:not(:last-of-type) {
@@ -129,11 +133,13 @@ h3 {
 
 .Card h3 {
   border-bottom: 2px solid orange;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .Card h4 {
   color: orange;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .Card p {
@@ -345,7 +351,7 @@ h3 {
 
   .SearchBox p {
     align-self: flex-end;
-    margin: 0;
+    margin: 10px 15px 10px 10px;
   }
   .SearchBox p:hover {
     box-shadow: none;
