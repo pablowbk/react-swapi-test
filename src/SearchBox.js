@@ -33,13 +33,13 @@ const SearchBox = ({ searchChange, visibility, handleSearchBoxClick }) => {
         className="input"
         type="search"
         placeholder="start typing here"
-        onChange={searchChange}
+        onChange={ searchChange }
         autoFocus={ visibility ? true : false }
       />
-      <p onClick={handleSearchBoxClick}>hide search bar</p>
+      <p onClick={ handleSearchBoxClick }>hide search bar</p>
     </div>
   )
 }
 
 
-export default SearchBox
+export default SearchBox;

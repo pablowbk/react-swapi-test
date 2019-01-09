@@ -53,7 +53,6 @@ class App extends Component {
 
   }
 
-
   handleAboutClick(event) {
     this.setState({isAboutVisible: !this.state.isAboutVisible});
   }

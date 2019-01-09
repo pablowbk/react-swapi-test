@@ -13,6 +13,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   color: white;
@@ -37,7 +41,7 @@ h2 {
   right: 0;
   width: 100%;
   background: rgba(60, 60, 60, 1);
-  z-index: 998;
+  z-index: 997;
 }
 
 .Nav ul {
@@ -239,7 +243,7 @@ h3 {
   align-items: center;
   border-radius: 20px;
   color: rgba(60, 60, 60, 1);
-  z-index: 10;
+  z-index: 999;
   padding: 25px;
   /* border: 2px solid rgba(60,60,0,1); */
   box-shadow: 0 0 30px 5px orange;
@@ -320,7 +324,7 @@ h3 {
   align-items: center;
   /* background-color: rgba(60, 60, 60, 1); */
   transition: all 200ms ease-in-out;
-  z-index: 999;
+  z-index: 998;
 
 }
 
