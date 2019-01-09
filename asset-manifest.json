@@ -1,14 +1,14 @@
 {
-  "main.css": "/react-swapi-test/static/css/main.c43b907c.chunk.css",
-  "main.js": "/react-swapi-test/static/js/main.792dea7b.chunk.js",
-  "main.js.map": "/react-swapi-test/static/js/main.792dea7b.chunk.js.map",
+  "main.css": "/react-swapi-test/static/css/main.b8d6d4f1.chunk.css",
+  "main.js": "/react-swapi-test/static/js/main.2e131a95.chunk.js",
+  "main.js.map": "/react-swapi-test/static/js/main.2e131a95.chunk.js.map",
   "static/js/1.311eec27.chunk.js": "/react-swapi-test/static/js/1.311eec27.chunk.js",
   "static/js/1.311eec27.chunk.js.map": "/react-swapi-test/static/js/1.311eec27.chunk.js.map",
   "runtime~main.js": "/react-swapi-test/static/js/runtime~main.c115b7f3.js",
   "runtime~main.js.map": "/react-swapi-test/static/js/runtime~main.c115b7f3.js.map",
-  "static/media/App.css": "/react-swapi-test/static/media/STARWARS.35f31c7a.woff",
-  "static/css/main.c43b907c.chunk.css.map": "/react-swapi-test/static/css/main.c43b907c.chunk.css.map",
+  "static/media/App.css": "/react-swapi-test/static/media/STARWARS.3f085be9.ttf",
+  "static/css/main.b8d6d4f1.chunk.css.map": "/react-swapi-test/static/css/main.b8d6d4f1.chunk.css.map",
   "index.html": "/react-swapi-test/index.html",
-  "precache-manifest.f0cba5316bc31a3c2dc33859c3120da7.js": "/react-swapi-test/precache-manifest.f0cba5316bc31a3c2dc33859c3120da7.js",
+  "precache-manifest.7360d0968255ab23400cba41e79ee0e5.js": "/react-swapi-test/precache-manifest.7360d0968255ab23400cba41e79ee0e5.js",
   "service-worker.js": "/react-swapi-test/service-worker.js"
 }
