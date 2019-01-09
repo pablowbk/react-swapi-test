@@ -216,7 +216,7 @@ h3 {
 /* ////////  NAV BAR COMPS ////////// */
 .About {
   position: fixed;
-  width: 80vw;
+  max-width: 900px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -233,6 +233,10 @@ h3 {
   box-shadow: 0 0 30px 5px orange;
 }
 
+.About h1,h3,h4 {
+  margin: 10px;
+}
+
 .About hr {
   margin: 0;
   border: 0;
@@ -243,6 +247,7 @@ h3 {
 }
 
 .About p {
+  margin: 0;
   padding: 20px;
   font-size: 1em;
 }
@@ -270,18 +275,15 @@ h3 {
 }
 
 .About .links {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .About button {
   margin: 0;
   padding: 5px 15px;
   margin-top: 20px;
-  border-bottom: 2px solid orange;
-  border-right: 2px solid orange;
-  border-left: 2px solid orange;
+  border: 2px solid orange;
   border-radius: 20px;
-  box-shadow: 0px 3px 10px 0px rgba(60, 60, 60, .5);
   transition: all 100ms ease-in;
   background: transparent;
   font: inherit;
@@ -289,16 +291,23 @@ h3 {
 
 .About button:hover {
   cursor: pointer;
-  padding: 5px 20px;
+  padding: 5px 18px;
+  box-shadow: 0px 3px 10px 0px rgba(60, 60, 60, .2);
 }
 
 /* SEARCH BOX */
 .SearchBox {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
   margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgba(60, 60, 60, 1);
+  transition: all 200ms ease-in-out;
 
 }
 
@@ -326,10 +335,7 @@ h3 {
 
 @media (min-width: 600px) {
   .SearchBox {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
+
     margin-top: auto;
    }
 
