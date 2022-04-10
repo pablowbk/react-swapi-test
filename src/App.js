@@ -37,7 +37,7 @@ class App extends Component {
     const urlsArray = [];
 
     for(let i = 1; i < 10; i++) {
-      urlsArray.push('https://swapi.co/api/people/?page=' + i.toString());
+      urlsArray.push('https://swapi.dev/api/people/?page=' + i.toString());
     }
 
     const charsData = [];
